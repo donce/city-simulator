@@ -1,0 +1,148 @@
+//-----------------------------------------------------------------------------------
+NOTES
+//-----------------------------------------------------------------------------------
+NOW: New GUI
+
+BUG: While changing lines, cars can jump over the destination
+possible solution: check progress or road
+
+//-----------------------------------------------------------------------------------
+TODO
+//-----------------------------------------------------------------------------------
+
+NOW:STOPPED VEHICLES
+CAR SPEED BEHAVIOUR
+
+calculation of the breaking length which depends on speed and vModel
+		
+put normal font
+
+check if map is correct:
+	all points are connected
+	there are at least one crossroad
+
+
+sky
+
+delete []a; !!!!
+
+
+CHECK : 5 / x, double x = 0;(or 0.0) (if shows division by zero)
+
+
+One way roads:
+	crossroads has >2 SUM OF OUT AND IN ROADS!(change, now only OUT)
+
+
+STATISTICS:
+number of stopped cars(%)
+
+
+FIX BUG:Side of two parallel road with different number of lines(in "BUG" folder)
+
+
+//-----------------------------------------------------------------------------------
+IDEAS:
+//-----------------------------------------------------------------------------------
+  
+
+light model with different lights
+
+//-----------------------------------------------------------------------------------
+DONE:
+//-----------------------------------------------------------------------------------
+
+Dragging
+Check why real mouse's and icon's positions are different
+New roads rendering
+Time control
+
+equal lines
+
+point vehicle::Destination()
+
+CAR klase turi(gavo) nuoroda i SIMULATOR - PANAIKINTI?
+
+point operators
+
+selected GUI table goes to front
+
+mouse dragging camera while GUI is on
+
+Cars' movement
+
+car:give pointer to vModel in Init
+
+make 2 sides for each road(not only right) and render roads using them
+
+few lines
+
+different speeds of the vehicles
+
+car length
+
+Model m.Draw(point3, int k)
+
+sort neighbours by angle
+
+roads/crossroads rendering
+	check bugs for:
+		getting equation from 2 vertical points
+		stright road with more then one point!!
+		unused crossroads' vectors
+
+FIX VEHICLES' PROGRESS:
+	now it's different, depending on which line vechicle started(because different lines
+	start in different distance)
+	
+split common to point
+
+SetAvail(double avail) for vehicle
+
+simulation.txt unneceserry?
+
+LATER:ROUTES
+
+vehicle beginning pos
+
+BIG DELAY(progress time) IN LOADING CAUSES CARS TO GO AWAY(out of road) - bug fixed
+
+BUG:different progresses from different points causes currentProgr > v.Length()
+
+
+double simulator::CarAvail(int nr) :
+	check more then one segment+
+	CarAvail -> VehicleAvail+
+		
+vehicles don't turn around(prev != next) - this would fix bug
+
+idea of improving(rewriting) roads(with 2 neigh) "roads idea.png"
+
+calculate distance to crossroad
+
+SPAWN function for vehicle
+
+sidewalks
+
+House models
+
+If vehicle has more time than need to go to next point, Progress one more time.
+
+buildings have widths, don't allow to build/move away building in collision.
+
+
+road's textures
+//-----------------------------------------------------------------------------------
+CANCELLED
+//-----------------------------------------------------------------------------------
+
+divide turning into to types:
+	when neigh nr == 2(1 point)
+	when neigh nr > 2(2 points, crossroad)	
+
+Left/right way traffic(just change destination's function)
+
+change *used in city to function's parameter
+
+split ROAD rendering to two sides
+//-----------------------------------------------------------------------------------
